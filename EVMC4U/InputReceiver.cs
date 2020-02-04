@@ -178,6 +178,7 @@ namespace EVMC4U
                 }
 
                 LastInput = "Key-" + key.name +" = "+key.active + " (" + key.keycode + ")";
+                InputDictionary["Key-" + key.name] = (key.active != 0);
             }
             // v2.2
             else if (message.address == "/VMC/Ext/Midi/Note"
